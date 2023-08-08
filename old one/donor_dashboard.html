@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/donor_dash.css">
+    <title>Donor Dashboard</title>
+</head>
+<body>
+    <!--Main Navigation-->
+<header>
+    <!-- Sidebar -->
+    <nav
+         id="navbarNav"
+         class="collapse d-lg-block sidebar collapse bg-white"
+         >
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a 
+             href="donor_dashboard.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+            <i class="fa fa-user fa-fw me-3"></i><span >Profile</span>
+          </a>
+          <a
+             href="donor_see_breq.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-envelope-open me-3" aria-hidden="true"></i></i><span>Blood Requests</span></a
+            >
+          <a
+             href="donor_search_donor.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-search fa-fw me-3"></i
+            ><span>Search Donors</span></a
+            >
+          <a
+             href="donor_add_donor.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+            <i class="fa-solid fa-user-plus me-3"></i><span>Add a donor</span>
+          </a>
+          <a
+             href="#"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa-solid fa-circle-plus me-3"></i><span>Add blood request</span></a
+            >
+          <a
+             href="dashboard_gallery.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+            ><span>Gallery</span></a
+            >
+          <a
+          href="dashboard_health_tips.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+             ><span>Health tips</span></a
+            >
+          <a
+          href="dashboard_events.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+             ><span>Events</span></a
+            >
+          <a
+          href="donor_files_upload.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fas fa-file me-3"></i><span>Files</span></a
+            >
+          <a
+             href="index.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fas fa-sign-out-alt me-3"></i><span>Log Out</span></a
+            >
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+  
+    <!-- Navbar -->
+    <nav
+         id="main-navbar"
+         class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+         >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+               src="logos/bdms.PNG"
+               height="25"
+               alt=""
+               loading="lazy"
+               />
+        </a>
+       
+  
+        <!-- Right links -->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <!-- Notification dropdown -->
+          <li class="nav-item dropdown">
+            <a
+               class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+               href="#"
+               id="navbarDropdownMenuLink"
+               role="button"
+               data-mdb-toggle="dropdown"
+               aria-expanded="false"
+               >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                    >1</span
+                >
+            </a>
+            <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+                >
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+  
+         
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+  
+  <!--Main layout-->
+  <main style="margin-top: 58px">
+    <div class="container pt-4">
+      <!-- Section: Main chart -->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header py-3">
+            <h5 class="mb-0 text-center"><strong>User name</strong></h5>
+          </div>
+
+        </div>
+      </section>
+      <!-- Section: Main chart -->
+      <section>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <div class="card-body p-5 ">   
+                 <div class="mb-md-5 md-4 pb-5"> 
+                   <div >
+                    <div id="profile-container  text-center p-20">
+                      <image id="profileImage" src="images/profile.jpg" class="rounded-circle w-100 h-80"/>
+                   </div>
+                  <div >
+                   <form action="">
+                     <div>
+                       <label for="customFile">Select image</label>
+                      <input type="file" class="form-control" id="customFile" />
+                     </div>
+                     <div class="panel panel-primary">
+                    
+            
+                      <div class="panel-body">
+              <form method="" autocomplete="off" role="form" enctype="multipart/form-data">
+              <div class="form-group">
+                <label class="control-label text-primary" for="NAME" >Name</label>
+                <input type="text" placeholder="Full Name" id="NAME" name="NAME"  required class="form-control input-sm">
+              </div>
+              <div class="form-group">
+                <label class="control-label text-primary" for="FATHER_NAME">Father Name</label>
+                <input type="text" placeholder="Father Name" id="FATHER_NAME" name="FATHER_NAME" required class="form-control input-sm">
+              </div>
+              
+              <div class="form-group">
+                <label class="control-label text-primary"  for="GENDER">Gender</label>
+                  <select id="gen" name="GENDER" required class="form-control input-sm">
+                    <option value="">Select Gender</option>
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+              </div>
+              
+              <div class="form-group">
+                <label class="control-label text-primary" for="DOB">D.O.B</label>
+                <input type="text"  placeholder="YYYY/MM/DD" required id="DOB" name="DOB"  class="form-control input-sm DATES">
+              </div>
+              
+              
+              <div class="form-group">
+                <label class="control-label text-primary" for="BLOOD" >Blood Group</label>
+              <select id="blood" name="BLOOD" required class="form-control input-sm">	
+                <option value="">Select Blood</option>
+                <option value="A+" selected>A+</option>
+              
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="control-label text-primary" for="BODY_WEIGHT" >Body Weight</label>
+                <input type="text" required placeholder="Weight In Kgs"  name="BODY_WEIGHT" id="BODY_WEIGHT" class="form-control input-sm">
+              </div>
+               <div class="form-group">
+                  <label class="control-label text-primary" for="EMAIL" >Email ID</label>
+                                  <input type="email"  required name="EMAIL" id="EMAIL" class="form-control" placeholder="Email Address">
+                            </div>
+    
+               
+                <div class="form-group">
+                  <label class="control-label text-primary" for="STATE">State</label>
+                                  <select name="STATE" id="STATE" required class="form-control">
+                  <option value="">Select Division</option>
+                  </select>
+                            </div>
+                
+  
+                <div class="form-group">
+                  <label class="control-label text-primary" for="CITY" >City</label>
+                                  <select name="CITY" id="CITY" required class="form-control">
+                  <option value="">Select City</option>
+                  
+                  </select>
+  
+                            </div>
+                
+                <div class="form-group">
+                <label class="control-label text-primary" for="AREA" >Area</label>
+                                  <input type="text" required name="AREA" id="AREA" class="form-control" placeholder="Insert Area">
+                            </div>
+                
+                             <div class="form-group">
+                  <label class="control-label text-primary" for="ADDRESS">Address</label>
+                                  <textarea required name="ADDRESS" id="ADDRESS" rows="5" style="resize:none;"class="form-control" placeholder="Full Address"></textarea>
+                            </div>
+  
+                <div class="form-group">
+                  <label class="control-label text-primary" for="PINCODE">Pincode</label>
+                                  <input type="text" required name="PINCODE" id="PINCODE" class="form-control" placeholder="Insert Pincode">
+                            </div>
+                
+                
+                 
+                
+                
+                 <div class="form-group">
+                  <label class="control-label text-primary" for="CONTACT_1" >Contact-1</label>
+                                  <input type="text" required name="CONTACT_1" id="CONTACT_1" class="form-control" placeholder="Contact No-1">
+                            </div>
+                 <div class="form-group">
+                  <label class="control-label text-primary" for="CONTACT_2" >Contact-2</label>
+                                  <input type="text" required name="CONTACT_2" id="CONTACT_2" class="form-control" placeholder="Contact No-2">
+                            </div>
+                <hr>
+              
+  
+                
+    
+            
+              <div class="form-group">
+                <label class="control-label text-primary"  for="LAST_D_DATE">Last Blood Donoted Date</label>
+                <input type="date"  name="LAST_D_DATE"  id="LAST_D_DATE"  class="form-control ">
+              </div>
+            </div>
+            <hr>
+              
+               
+              
+            
+              
+                <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" name="submit" >Apply</button>
+                </div>
+               </form>
+                      </div>
+                  </div>
+
+
+
+
+                   </form>
+
+
+
+                 </div>
+                 </div>
+                </div>
+              </div> 
+           </div>
+       </div>
+
+      </div>
+      </section>
+  
+     
+  
+     
+    </div>
+  </main>
+  <!--Main layout-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/donor_dash.js"></script>
+</body>
+</html>

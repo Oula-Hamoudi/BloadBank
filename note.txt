@@ -1,0 +1,16 @@
+null = pending
+0 = declined
+1 = taken
+2 = donated
+
+
+
+
+null | 1 | 2   > display list
+
+
+
+
+
+
+donor: last_donated_date

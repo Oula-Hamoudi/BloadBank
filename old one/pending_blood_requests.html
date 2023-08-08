@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/donor_dash.css">
+    <title>Pending blood Request</title>
+</head>
+<body>
+    <!--Main Navigation-->
+<header>
+    <!-- Sidebar -->
+    <nav
+         id="navbarNav"
+         class="collapse d-lg-block sidebar collapse bg-white"
+         >
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a 
+             href="admin_panel.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+           <span >Profile</span>
+          </a>
+          <a
+             href="admin_donor_list.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Donor List</a
+            >
+          <a
+             href="org_list.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>ORG list</span></a
+            >
+          <a
+             href="signup_requests.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+            <span>Signup requests</span>
+          </a>
+          <a
+             href="pending_blood_requests.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Pending blood request</span></a
+            >
+         
+          <a
+          href="pending_upload_reqs.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Pending Upload requests</span></a
+            >
+          <a
+          href="admin_search_donor.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Search Donor</span></a
+            >
+          <a
+          href="donor_files_upload.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Files</span></a
+            >
+          <a
+             href="admin_massege_html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Massege</span></a
+            >
+            <a
+             href="add_admin.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Add a admin</span></a
+            >
+            <a
+             href="index.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><span>Log out</span></a
+            >
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+  
+    <!-- Navbar -->
+    <nav
+         id="main-navbar"
+         class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+         >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+               src="logos/bdms.PNG"
+               height="25"
+               alt=""
+               loading="lazy"
+               />
+        </a>
+       
+  
+        <!-- Right links -->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <!-- Notification dropdown -->
+          <li class="nav-item dropdown">
+            <a
+               class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+               href="#"
+               id="navbarDropdownMenuLink"
+               role="button"
+               data-bs-toggle="collapse" data-bs-target="#notification"               >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                    >1</span
+                >
+            </a>
+            <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink" id="notification"
+                >
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+  
+         
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+  
+  <!--Main layout-->
+  <main style="margin-top: 58px">
+    <div class="container pt-4">
+      <!-- Section: Main chart -->
+      <section class="mb-4">
+        <div class="card">
+          <div class="card-header py-3">
+            <h5 class="mb-0 text-center"><strong>New blood request</strong></h5>
+          </div>
+          <div>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Blood group</th>
+                      <th scope="col">Divison</th>
+                      <th scope="col">City</th>
+                      <th scope="col">Pincode</th>
+                      
+                      <th scope="col">Number</th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                      <th scope="col"></th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>A+</td>
+                      <td>Dhaka</td>
+                      <td>Demra</td>
+                      <td>1341</td>
+                      <td>0176******</td>
+                      <td><a href="#" class="text-decoration-none text-primary">View</a></td>
+                      <td><a href="#" class="text-decoration-none text-primary">Approve</a></td>
+                      <td><a href="#" class="text-decoration-none text-danger">Delete</a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mark</td>
+                      <td>A+</td>
+                      <td>Dhaka</td>
+                      <td>Demra</td>
+                      <td>1341</td>
+                      <td>0176******</td>
+                      <td><a href="#" class="text-decoration-none text-primary">View</a></td>
+                      <td><a href="#" class="text-decoration-none text-primary">Approve</a></td>
+                      <td><a href="#" class="text-decoration-none text-danger">Delete</a></td>
+                 
+
+
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Mark</td>
+                      <td>A+</td>
+                      <td>Dhaka</td>
+                      <td>Demra</td>
+                      <td>1341</td>
+                      <td>0176******</td>
+                      <td><a href="#" class="text-decoration-none text-primary">View</a></td>
+                      <td><a href="#" class="text-decoration-none text-primary">Approve</a></td>
+                      <td><a href="#" class="text-decoration-none text-danger">Delete</a></td>
+
+                      </tr>
+                  </tbody>
+              </table>
+  
+     
+    </div>
+  </main>
+  <!--Main layout-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/donor_dash.js"></script>
+</body>
+</html>

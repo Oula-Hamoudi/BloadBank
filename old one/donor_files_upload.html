@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/donor_dash.css">
+    <title>Donor Dashboard</title>
+</head>
+<body>
+    <!--Main Navigation-->
+<header>
+    <!-- Sidebar -->
+    <nav
+         id="navbarNav"
+         class="collapse d-lg-block sidebar collapse bg-white"
+         >
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <a 
+             href="donor_dashboard.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+            <i class="fa fa-user fa-fw me-3"></i><span >Profile</span>
+          </a>
+          <a
+             href="donor_see_breq.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-envelope-open me-3" aria-hidden="true"></i></i><span>Blood Requests</span></a
+            >
+          <a
+             href="donor_search_donor.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-search fa-fw me-3"></i
+            ><span>Search Donors</span></a
+            >
+          <a
+             href="#"
+             class="list-group-item list-group-item-action py-2 ripple"
+             >
+            <i class="fa-solid fa-user-plus me-3"></i><span>Add a donor</span>
+          </a>
+          <a
+             href="#"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa-solid fa-circle-plus me-3"></i><span>Add blood request</span></a
+            >
+          <a
+             href="dashboard_gallery.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+            ><span>Gallery</span></a
+            >
+          <a
+          href="dashboard_health_tips.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+             ><span>Health tips</span></a
+            >
+          <a
+          href="dashboard_events.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fa fa-upload me-3" aria-hidden="true"></i></i
+             ><span>Events</span></a
+            >
+          <a
+          href="donor_files_upload.html"
+          class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fas fa-file me-3"></i><span>Files</span></a
+            >
+          <a
+             href="index.html"
+             class="list-group-item list-group-item-action py-2 ripple"
+             ><i class="fas fa-sign-out-alt me-3"></i><span>Log Out</span></a
+            >
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+  
+    <!-- Navbar -->
+    <nav
+         id="main-navbar"
+         class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+         >
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+               src="logos/bdms.PNG"
+               height="25"
+               alt=""
+               loading="lazy"
+               />
+        </a>
+       
+  
+        <!-- Right links -->
+        <ul class="navbar-nav ms-auto d-flex flex-row">
+          <!-- Notification dropdown -->
+          <li class="nav-item dropdown">
+            <a
+               class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+               href="#"
+               id="navbarDropdownMenuLink"
+               role="button"
+               data-mdb-toggle="dropdown"
+               aria-expanded="false"
+               >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                    >1</span
+                >
+            </a>
+            <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+                >
+              <li><a class="dropdown-item" href="#">Some news</a></li>
+              <li><a class="dropdown-item" href="#">Another news</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+  
+         
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  <!--Main Navigation-->
+  
+  <!--Main layout-->
+  <main style="margin-top: 10px">
+    <section>
+    <div class="container pt-4">
+      <!-- Section: Main chart -->
+      <section class="mb-2">
+          <section>
+            <div class="container py-2 h-50">
+                <div class="row d-flex justify-content-center align-items-center h-50">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                      <div class="card-body p-5 ">   
+                       <div class="mb-md-2 md-4 pb-2"> 
+                        <h1 class="lead" style="text-align: center;">Upload a</h1> <hr>
+                        <div >
+                         <form action="">
+                           <div>
+                             <label for="customFile">Select File</label>
+                            <input type="file" class="form-control" id="customFile" />
+                           </div>
+                           <div>
+                             <span class="small text-danger">file size maximum 1mb</span>
+                           </div>
+                           <div class="">
+                            <label for="title" class="form-label">File name</label>
+                            <input type="email" class="form-control" id="title" >
+                          </div>
+                          
+                          <div>
+                            <button type="submit" class="btn btn-block btn-primary">Submit</button>
+ 
+                          </div>
+                         </form>
+ 
+ 
+ 
+                       </div>
+                       </div>
+                      </div>
+                    </div> 
+                 </div>
+             </div>
+        </section>
+        </div>
+      </section>
+      <!-- Section: Main chart -->
+     
+     
+  
+     
+    </div>
+    <hr>
+    </section>
+    <section>
+    <div class="container">
+        <div class="row">
+            <h3>Your files</h3>
+            <div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">File Name</th>
+                          <th scope="col">Uploaded Date</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Date</td>
+                          <td><a href="#" class="text-decoration-none">View</a></td>
+                          <td><a href="#" class="text-decoration-none">Delete</a></td>
+    
+                        </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Anthony</td>
+                            <td>Date</td>
+                            <td><a href="#" class="text-decoration-none">View</a></td>
+                            <td><a href="#" class="text-decoration-none">Delete</a></td>
+    
+                          </tr>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Lucas</td>
+                            <td>Date</td>
+            
+                            <td><a href="#" class="text-decoration-none">View</a></td>
+                            <td><a href="#" class="text-decoration-none">Delete</a></td>
+    
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+
+        </div>
+    </div>
+    </section>
+  </main>
+  <!--Main layout-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/donor_dash.js"></script>
+</body>
+</html>
